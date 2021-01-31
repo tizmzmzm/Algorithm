@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gugudan</title>
+</head>
+<body>
+    <script>
+        let A = Number(prompt("input number",0));
+
+        function gugudan(a) {
+            for (let i = 1; i <= 9; i++) { // 1 ~ 9 까지 반복 
+                document.write(a+" X "+i+" = "+a*i,"</br>"); // a X i = a*i로 출력
+            }
+        }
+
+        gugudan(A);
+    </script>
+</body>
+</html>

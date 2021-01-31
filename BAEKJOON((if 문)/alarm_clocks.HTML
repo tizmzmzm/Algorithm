@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>alarm_clocks</title>
+</head>
+<body>
+    <script>
+        let H = Number(prompt("hour",0));
+        let M = Number(prompt("minute",0));
+
+        function alarmClock(h,m) {
+            if((m - 45) < 0) {
+                h = h - 1;
+                m = 60 + (m - 45);
+                if(h <= 0) {
+                    h = 24 + h; 
+                    return document.write(h+" : "+m);
+                }
+                document.write(h+" : "+m);
+            }
+            else if((m - 45) >= 0){
+                m = m - 45;
+                document.write(h+" : "+m);
+            }
+        }
+        alarmClock(H,M);
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>printStar-1</title>
+</head>
+<body>
+    <script>
+        let star = Number(prompt("input number",0)); // 줄의 갯수
+        let result = ""; // 별찍기 출력을 data type: string 값으로 저장
+
+        function printStar(star) {
+            for(let i = 1; i <= star; i++) { // 1 ~ star 까지 반복
+                for(let j = 1; j <= i; j++) { // j ~ i(첫째 줄 = 별한개) 까지 반복
+                    result += "*";
+                }
+                result += "\n";
+            }
+            console.log(result);
+        }
+
+        printStar(star);
+    </script>
+</body>
+</html>

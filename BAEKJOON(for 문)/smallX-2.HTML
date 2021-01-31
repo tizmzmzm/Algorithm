@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>smallX-2</title>
+</head>
+<body>
+    <script>
+        let N = Number(prompt("input number",0)); // 숫자를 받는 횟수
+        let X = Number(prompt("input standard",0)); // standard number
+        let arr = []; // number array
+
+        function smallX(n,x) {
+            for(let i = 0; i < n; i++) { // n회 숫자 받고 배열에 저장
+                let number = Number(prompt("input number",0)); // 숫자 받기
+                arr.push(number); // 배열에 숫자 넣기
+            }
+            for(let i = 0; i < arr.length; i++) { // arr 배열을 원소 돌기
+                if(arr[i] < x) { // arr[i]가 X보다 작다면 
+                    console.log(arr[i],"\n"); // 콘솔창에 출력한다
+                }
+            }
+        }
+
+        smallX(N,X)
+    </script>
+</body>
+</html>

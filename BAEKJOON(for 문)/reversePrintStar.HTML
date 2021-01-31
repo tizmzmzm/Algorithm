@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>reversePrintStar</title>
+</head>
+<body>
+    <script>
+        let star = Number(prompt("input number",0)); // 줄의 갯수
+        result = ""; // 별과 빈칸을 찍을때 data type: string
+
+        function printStar(star) { // star: 파라미터
+            for (let i = 1; i <= star; i++) { // 1 ~ star 까지 반복
+                for (let j = star - i; j >= 1; j--) { // 빈칸을 star - i의 최댓값인 4 ~ 1 까지 줄어들면서 star값 설정 
+                    result += "0"; //빈칸을 의미함
+                }
+                for (let j = 1; j <= i; j++) {
+                    result += "*"; // 별의 갯수는 j의 최솟값인 1부터 i의 최댓값인 5까지 
+                }
+                result += "\n";
+            }
+            console.log(result);
+        }
+
+        printStar(star); // star 인자값
+    </script>
+</body>
+</html>

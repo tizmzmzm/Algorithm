@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>samllX</title>
+</head>
+<body>
+    <script>
+        let N = Number(prompt("input N",0)); // test case 횟수
+        let X = Number(prompt("input X",0)); // standard number
+        let arr = [];
+        
+        function smallX(N,X) {
+            for (let i = 1; i <= N; i++) {
+                arr.push(i); // 받은 숫자를 arr에 저장
+                arr.sort((a,b) => a-b); // arr 배열을 오름차순으로 정렬
+            }
+            for (let i = 0; i < arr.length; i++) {
+                if (arr[i] < X) { //arr[i]가 X보다 작을시
+                    console.log(arr[i],"\n"); // 콘솔창에 arr[i]번째를 출력
+                }
+            }
+        }
+
+        smallX(N,X);
+    </script>
+</body>
+</html>

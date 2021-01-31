@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>testCasePlus</title>
+</head>
+<body>
+    <script>
+        let cas = Number(prompt("input number",0)); // 반복되는 cas
+
+        function testCasePlus(cas) {
+            for (let i = 0; i < cas; i++) { 
+                
+                let A = Number(prompt("input number",0)); // 숫자 받기
+                let B = Number(prompt("input number",0)); // 숫자 받기
+
+                document.write(A+" + "+B+" = "+(A + B),"</br>"); // 합 결과 출력
+            }
+        }
+        
+        testCasePlus(cas);
+    </script>
+</body>
+</html>

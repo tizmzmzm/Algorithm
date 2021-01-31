@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leap year</title>
+</head>
+<body>
+    <script>
+        let year = Number(prompt("input year",0));
+
+        // 상항 조건 연산자
+        // function distinguish() {
+        //     document.write(year % 4 == 0 && year % 100 != 0 || year % 400 == 0 ? "윤년입니다" : "평년입니다");
+        // }
+
+        function distinguish(year) {
+            if(year % 4 == 0 && year % 100 != 0 || year % 400 == 0) {
+                document.write("윤년입니다");
+            }
+            else {
+                document.write("평년입니다");
+            }
+        }
+        distinguish(year)
+    </script>
+</body>
+</html>
