@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>plusCycle</title>
+</head>
+<body>
+    <script>
+        let number = Number(prompt("input number",0)); //55
+        let plus10 = 0;
+        let plus01 = 0;
+        let result = number; // number값을 result에 담는다
+        let count = 0;
+
+        while(true) { // 무한 반복
+            plus10 = (result%10)*10; // result 수의 10의 자리
+            plus01 = (Math.floor(result/10) + (result%10))%10; // result 수의 01의 자리   
+            
+            result = plus10 + plus01; // 새로운 result 생성
+            count++; //반복 횟수
+            console.log(result); // 끝나기 전까지 나온 result  
+
+            if(number == result) { // result와 처음에 넣은 number 값이 같으면 
+                console.log("count: "+count); // 반복 횟수인 count 출력
+                break; // 무한 반복을 끝낸다
+            }
+        }
+    
+    </script>
+</body>
+</html>

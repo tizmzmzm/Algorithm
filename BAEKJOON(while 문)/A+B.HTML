@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A + B</title>
+</head>
+<body>
+    <script>
+        
+        while(true) { // while문 조건에 true값을 주어서 무한 반복 시전
+            let A = Number(prompt("input A",0)); // A 값 받기
+            let B = Number(prompt("input B",0)); // B 값 받기
+            
+            if(A == 0 && B ==0){ // 무한 반복을 끝낼 조건
+                break;
+            }
+            console.log(A+" + "+B+ " = " +(A+B)); // A + B;
+        }
+    </script>
+</body>
+</html>
